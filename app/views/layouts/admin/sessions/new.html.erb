@@ -1,0 +1,40 @@
+<div class = "container">
+  <!--<div class = "row">-->
+    <h3>管理者ログイン</h3>
+      
+   
+  　<div class = "row px-0">
+     <%= form_with model: @admin, url: admin_session_path do |f| %>
+    
+     <div class="row mb-3">
+       <label for="inputEmail3" class="col-md-5 col-form-label">メールアドレス</label>
+       <div class="col-md-7">
+         <input class="mx-auto" type="email"  id="inputEmail3" >
+       </div>
+     </div>
+
+       
+       <div class="row">
+         <label for="inputPassword3" class="col-md-6 col-form-label">パスワード</label>
+         <div class="col-md-6">
+           <input class="mx-auto" type="password" id="inputPassword3">
+         </div>
+       </div>
+       
+       
+       <div class = "row">
+       <div class="actions">
+         <%= f.submit "ログイン" , class: "btn btn-sm btn-primary mx-auto" %>
+       </div>
+       </div>
+     <% end %>
+     
+     
+  　</div>
+  　</div>
+  </div>
+</div>
+
+
+
+
